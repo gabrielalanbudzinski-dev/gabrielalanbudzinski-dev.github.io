@@ -1,11 +1,11 @@
 *{box-sizing:border-box;margin:0;padding:0}
 :root{--bg:#0a0a0a;--panel:#111;--panel2:#151515;--text:#f4f1ea;--muted:#9b9993;--line:#262626;--accent:#cc785c;--accent-2:#e3a06c;--accent-3:#7a4030}
 html{scroll-behavior:smooth}
-body{background:radial-gradient(1100px 700px at 12% -8%,rgba(204,120,92,.22),transparent 60%),radial-gradient(900px 650px at 92% 22%,rgba(122,64,48,.28),transparent 62%),radial-gradient(1000px 700px at 25% 92%,rgba(227,160,108,.14),transparent 60%),var(--bg);background-attachment:fixed;color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.55;overflow-x:hidden}
+body{background:radial-gradient(1100px 700px at 12% -8%,rgba(204,120,92,.22),transparent 60%),radial-gradient(900px 650px at 92% 22%,rgba(122,64,48,.28),transparent 62%),radial-gradient(1000px 700px at 25% 92%,rgba(227,160,108,.14),transparent 60%),var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.55;overflow-x:hidden}
 body:before{content:"";position:fixed;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:72px 72px;mask-image:linear-gradient(to bottom,black,transparent 75%);pointer-events:none;z-index:-1}
 .noise{position:fixed;inset:0;opacity:.025;pointer-events:none;z-index:10;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.45'/%3E%3C/svg%3E")}
-.bg-fx{position:fixed;inset:0;z-index:-2;overflow:hidden;pointer-events:none}
-.blob{position:absolute;border-radius:50%;filter:blur(110px);will-change:transform}
+.bg-fx{position:fixed;inset:0;z-index:-2;overflow:hidden;pointer-events:none;transform:translateZ(0);contain:strict}
+.blob{position:absolute;border-radius:50%;filter:blur(80px);will-change:transform;transform:translateZ(0)}
 .blob-1{width:640px;height:640px;top:-260px;left:-180px;background:radial-gradient(circle,var(--accent) 0%,transparent 68%);opacity:.4;animation:drift1 24s ease-in-out infinite}
 .blob-2{width:560px;height:560px;top:28%;right:-220px;background:radial-gradient(circle,var(--accent-3) 0%,transparent 70%);opacity:.45;animation:drift2 28s ease-in-out infinite}
 .blob-3{width:520px;height:520px;bottom:-260px;left:22%;background:radial-gradient(circle,var(--accent-2) 0%,transparent 70%);opacity:.22;animation:drift3 32s ease-in-out infinite}
