@@ -30,3 +30,4 @@ The site is plain HTML/CSS/JS, so there is no framework or build step.
 - `assets/world-soccer-tycoon.jpg`
 - `assets/stonebridge-dungeon-siege.jpg`
 - `assets/surf-tycoon.jpg`
+- `assets/cases/sportia.jpg`
